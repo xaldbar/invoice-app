@@ -1,0 +1,14 @@
+.Arrow {
+    transform: rotateZ(180deg);
+    margin-right: 0.5rem;
+}
+
+.BackButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}

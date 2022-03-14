@@ -1,0 +1,40 @@
+.Invoice {
+  display: grid;
+  width: 100%;
+  background-color: rgb(30, 33, 57);
+  border: 1px solid transparent;
+  padding: 1rem 1.5rem;
+  transition: border 0.3s ease 0s, background 0.3s ease 0s;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-box-align: center;
+  grid-template-columns: 5rem 9rem 1fr min-content min-content min-content;
+  grid-template-rows: min-content;
+  margin-bottom: 1rem;
+}
+
+.Invoice:hover {
+  border-color: rgb(124, 93, 250);
+}
+
+.Link {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.date {
+  font-size: 0.75rem;
+}
+
+.name {
+  font-size: 0.75rem;
+}
+
+.cost {
+  font-size: 1rem;
+  font-weight: 700;
+}

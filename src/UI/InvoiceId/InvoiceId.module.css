@@ -1,0 +1,23 @@
+.idHash {
+    color: rgb(126, 136, 195);
+}
+
+.id, .idHash {
+   float: left;
+}
+
+.id.normal{
+    font-size: 0.75rem;
+}
+
+.idHash.normal {
+    font-size: 0.7rem;
+}
+
+.id.big{
+    font-size: 1rem;
+}
+
+.idHash.big {
+    font-size: 0.95rem;
+}

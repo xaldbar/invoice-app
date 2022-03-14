@@ -1,0 +1,57 @@
+.StatusBage {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease 0s;
+    font-size: 0.75rem;
+    line-height: 1.125;
+    letter-spacing: -0.25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-right: 5px;
+}
+
+.status {
+
+}
+
+.paid {
+    background-color: rgba(51, 214, 159, 0.06);
+    color: rgb(51, 214, 159);
+}
+
+.paid > span {
+    background-color: rgb(51, 214, 159);
+}
+
+.pending {
+    background-color: rgba(255, 143, 0, 0.06);
+    color: rgb(255, 143, 0);
+}
+
+.pending > span {
+    background-color: rgb(255, 143, 0);
+}
+
+.draft {
+    background-color: rgba(223, 227, 250, 0.06);
+    color: rgb(223, 227, 250);
+}
+
+.draft > span {
+    background-color: rgb(223, 227, 250);
+}

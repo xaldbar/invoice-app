@@ -1,0 +1,28 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Text {
+    text-align: left;
+}
+
+.Title {
+    font-size: 2rem;
+}
+
+.Subtitle {
+    margin-top: 10px;
+    font-size: 0.75rem;
+}
+
+.newInvoice {
+
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
