@@ -4,6 +4,7 @@
 
 .id, .idHash {
    float: left;
+    text-align: start;
 }
 
 .id.normal{

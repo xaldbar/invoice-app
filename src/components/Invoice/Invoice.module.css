@@ -27,11 +27,14 @@
 
 
 .date {
+
+  justify-self: start;
   font-size: 0.75rem;
 }
 
 .name {
   font-size: 0.75rem;
+  justify-self: start;
 }
 
 .cost {

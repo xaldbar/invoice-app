@@ -1,4 +1,5 @@
 .Header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -18,11 +19,48 @@
 }
 
 .newInvoice {
-
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
 }
+
+.newInvoice img {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
 
 .Content {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.Filter {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
+}
+
+.Filter img {
+    transition: transform 0.2s ease-in;
+}
+
+.Filter.opened img {
+    transform: rotateZ(-180deg);
+}
+
+.Filter span {
+    margin-right: 5px;
 }

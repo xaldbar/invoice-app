@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Invoice.module.css'
 import {Link} from "react-router-dom";
 import StatusBage from "../../UI/statusBage/StatusBage";
-import {invoiceById} from "../../api";
+import {invoiceById} from "../../api/api";
 import arrowIcon from "../../images/icon-arrow-right.svg"
 import InvoiceId from "../../UI/InvoiceId/InvoiceId";
 

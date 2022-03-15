@@ -1,28 +1,22 @@
 import React from 'react';
-import classes from './Details.module.css'
-import DetailsStatusBar from "../DetailsStatusBar/DetailsStatusBar";
-import BackButton from "../../UI/BackButton/BackButton";
+import DetailsStatusBar from "./DetailsStatusBar";
+import classes from "./InvoiceDetails.module.css";
 import InvoiceId from "../../UI/InvoiceId/InvoiceId";
 
-
-const Details = (props) => {
-    console.log();
+const DetailsBody = (props) => {
     const {
         id,
         date,
         name,
         description,
-        status,
         address,
+        status,
         email,
         items,
-        setPaidStatus
     } = props;
-
     return (
         <>
-            <BackButton/>
-            <DetailsStatusBar status={status} id={id} setPaidStatus={setPaidStatus}/>
+            <DetailsStatusBar status={status} id={id}/> {/* SET PAID STATUS DELETE */}
             <div className={classes.Details}>
                 <div className={classes.idBLock}>
                     <InvoiceId id={id} size={'big'}/>
@@ -62,28 +56,28 @@ const Details = (props) => {
                 <div className={classes.tableWrapper}>
                     <table className={classes.itemsTable}>
                         <thead className={classes.tableHead}>
-                            <tr>
-                                <th>Item Name</th>
-                                <th>QTY.</th>
-                                <th>Price</th>
-                                <th>Total</th>
-                            </tr>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>QTY.</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
                         </thead>
                         <tbody className={classes.tableBody}>
-                            {items.list.map((item, index) => <tr  className={classes.tableItem} key={item.name}>
-                                    <td>{item.name}</td>
-                                    <td>{item.qty}</td>
-                                    <td>£{item.price}</td>
-                                    <td>£{item.price * item.qty}</td>
-                                </tr>
-                            )}
+                        {items.list.map((item, index) => <tr className={classes.tableItem} key={item.name}>
+                                <td>{item.name}</td>
+                                <td>{item.qty}</td>
+                                <td>£{item.price}</td>
+                                <td>£{item.price * item.qty}</td>
+                            </tr>
+                        )}
                         </tbody>
                         <tfoot className={classes.tableFooter}>
                         <tr>
                             <td>Amount Due</td>
                             <td></td>
                             <td></td>
-                            <td>£{items.list.reduce((acc, item) => acc + item.qty * item.price, 0)}</td>
+                            <td>£{items.total}</td>
                         </tr>
                         </tfoot>
                     </table>
@@ -93,4 +87,4 @@ const Details = (props) => {
     );
 };
 
-export default Details;
+export default DetailsBody;
