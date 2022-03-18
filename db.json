@@ -43,7 +43,7 @@
       },
       "name": "Wan Lun",
       "description": "Shop",
-      "status": "pending",
+      "status": "paid",
       "address": {
         "from": {
           "country": "United Kingdom",
@@ -110,7 +110,6 @@
         "total": "556"
       }
     },
-
     {
       "id": "RT3081",
       "date": {
@@ -119,7 +118,7 @@
       },
       "name": "Valter Scot",
       "description": "Re-branding",
-      "status": "pending",
+      "status": "paid",
       "address": {
         "from": {
           "country": "United Kingdom",
@@ -216,7 +215,6 @@
         "total": "600"
       }
     },
-
     {
       "id": "RT3332",
       "date": {
@@ -295,7 +293,7 @@
       },
       "name": "Alex Grim",
       "description": "Design",
-      "status": "pending",
+      "status": "paid",
       "address": {
         "from": {
           "country": "United Kingdom",
@@ -327,7 +325,6 @@
         "total": "956"
       }
     },
-
     {
       "id": "QT3245",
       "date": {
@@ -438,7 +435,6 @@
         "total": "700"
       }
     },
-
     {
       "id": "B4TWEV",
       "date": {
@@ -472,41 +468,6 @@
           }
         ],
         "total": "1800.9"
-      }
-    },
-    {
-      "id": "BEQQED",
-      "date": {
-        "invoice": "12 Aug 2021",
-        "payment": "31 Aug 2021"
-      },
-      "name": "Wan Lun",
-      "description": "Shop",
-      "status": "draft",
-      "address": {
-        "from": {
-          "country": "United Kingdom",
-          "city": "London",
-          "street": "19 Union Terrace",
-          "postCode": "E1 3EZ"
-        },
-        "to": {
-          "country": "United Kingdom",
-          "city": "Bradford",
-          "street": "84 Church Way",
-          "postCode": "BD1 9PB"
-        }
-      },
-      "email": "wanlunh@mail.com",
-      "items": {
-        "list": [
-          {
-            "name": "shop",
-            "qty": "1",
-            "price": "12000"
-          }
-        ],
-        "total": "12000"
       }
     },
     {
@@ -549,7 +510,5 @@
         "total": "556"
       }
     }
-
-
   ]
 }

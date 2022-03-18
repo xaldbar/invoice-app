@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {useDispatch} from "react-redux";
-import {deleteInvoiceFromList} from "../invoices/invoices-slice";
+import {deleteInvoiceFromList, setInvoiceStatusFromList} from "../invoices/invoices-slice";
 
 
 const initialState = {
@@ -19,7 +19,8 @@ export const loadInvoiceById = createAsyncThunk(
 
 export const setDetailsStatusById = createAsyncThunk(
     '@@details/set-details-status',
-    ({id, status}, {extra: {client, api}}) => {
+    ({id, status}, {extra: {client, api}, dispatch}) => {
+        dispatch(setInvoiceStatusFromList(id));
         return client.patch(api.invoiceById(id), {status});
     }
 );

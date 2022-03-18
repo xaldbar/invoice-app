@@ -17,11 +17,17 @@ const initialState = {
 };
 
 const invoicesSlice = createSlice({
-        name: '@@invoices',
+    name: '@@invoices',
     initialState,
     reducers: {
         deleteInvoiceFromList: (state, action) => {
             state.list = state.list.filter(invoice => invoice.id !== action.payload);
+        },
+        setInvoiceStatusFromList: (state, action) => {
+            state.list = state.list.map(invoice => invoice.id === action.payload ? {
+                ...invoice,
+                status: 'paid'
+            } : invoice);
         }
     },
     extraReducers: (builder) => {
@@ -43,7 +49,7 @@ const invoicesSlice = createSlice({
 });
 
 export const invoicesReducer = invoicesSlice.reducer;
-export const {deleteInvoiceFromList} = invoicesSlice.actions;
+export const {deleteInvoiceFromList, setInvoiceStatusFromList} = invoicesSlice.actions;
 // selectors
 export const selectInvoicesInfo = (state) => ({
     status: state.invoices.status,
